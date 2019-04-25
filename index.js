@@ -1,59 +1,56 @@
 module.exports = {
-  "parser": "babel-eslint",
-  "extends": ["react-app", "plugin:prettier/recommended"],
-  "plugins": [
-    "jest",
-    "react-hooks",
-    "import-helpers"
-  ],
-  "rules": {
-    "prettier/prettier": ["warn", {
-      "trailingComma": "es5",
-      "tabWidth": 2,
-      "semi": false,
-      "singleQuote": true,
-      "prefer-template": true
+  parser: 'babel-eslint',
+  extends: ['react-app', 'plugin:prettier/recommended'],
+  plugins: ['jest', 'react-hooks', 'import-helpers'],
+  rules: {
+    'prettier/prettier': ['warn', {
+      'trailingComma': 'es5',
+      'tabWidth': 2,
+      'semi': false,
+      'singleQuote': true,
+      'prefer-template': true
     }],
-    "no-unused-vars": "error",
-    "no-console": "error",
-    "prefer-template": "warn",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/no-unused-prop-types": "error",
-    "react/prop-types": "warn",
-    "import-helpers/order-imports": [
-      "warn",
+    'no-unused-vars': 'error',
+    'no-console': 'error',
+    'prefer-template': 'warn',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
+    'react/no-unused-prop-types': 'error',
+    'react/prop-types': 'error',
+    'import-helpers/order-imports': [
+      'warn',
       {
-        "newlines-between": "always",
-        "groups": [
-          ["builtin", "external", "internal"],
-          ["/^@habx/"],
-          ["/^@components/"],
-          ["/^@utils/", "/^@redux-module/", "/^@style/", "/^@fonts/", "/^@api/", "/^@pages/", "/^@puppeteer/", "/^@lib/",  "/^@helpers/"],
-          ["parent"],
-          ["sibling", "index"]
+        'newlines-between': 'always',
+        groups: [
+          ['builtin', 'external', 'internal'],
+          ['/^@habx/'],
+          ['/^@components/'],
+          ['/^@api/', '/^@fonts/', '/^@helpers/', '/^@hooks/', '/^@lib/', '/^@logic/', '/^@pages/',  '/^@puppeteer/', '/^@routes/', '/^@style/', '/^@utils/', '/^@redux-module/'],
+          ['parent'],
+          ['sibling', 'index']
         ],
-        "alphabetize": { "order": "asc", "ignoreCase": true }
+        alphabetize: { 'order': 'asc', 'ignoreCase': true }
       }
     ]
   },
-  "env": {
-    "browser": true,
-    "node": true
+  env: {
+    browser: true,
+    node: true,
+    "jest/globals": true
   },
-  "settings": {
-    "react": {
-      "version": "16.8.5"
+  settings: {
+    react: {
+      'version': '16.8.6'
     }
   },
-  "globals": {
-    "Sentry": true,
-    "page": true,
-    "browser": true,
-    "context": true,
-    "jestPuppeteer": true,
-    "analytics": true,
-    "location": true,
-    "mushu": true
+  globals: {
+    Sentry: true,
+    page: true,
+    browser: true,
+    context: true,
+    jestPuppeteer: true,
+    analytics: true,
+    location: true,
+    mushu: true
   }
 }
