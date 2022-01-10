@@ -26,7 +26,9 @@ module.exports = {
         groups: [
           'module',
           '/^@habx/',
+          "/^@habx\//",
           '/^@components/',
+          "/^@\//",
           [
             '/^@assets/',
             '/^@api/',
