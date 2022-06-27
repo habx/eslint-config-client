@@ -41,18 +41,18 @@
     "eslint-plugin-flowtype": "^8.0.3",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-import-helpers": "^1.2.1",
-    "eslint-plugin-jest": "^26.1.5",
+    "eslint-plugin-jest": "^26.5.3",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
-    "eslint-plugin-testing-library": "^5.4.0",
-    "prettier-eslint": "^14.0.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-testing-library": "^5.5.1",
+    "prettier-eslint": "^14.1.0",
     "typescript-eslint": "^0.0.1-alpha.0"
   },
   "devDependencies": {
     "husky": "^5.2.0",
-    "lint-staged": "^12.4.1"
+    "lint-staged": "^13.0.2"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
