@@ -22,7 +22,8 @@ alias:
 
 orbs:
   # docs: https://circleci.com/developer/orbs/orb/habx/node
-  node: habx/node@dev:alpha
+  node: habx/node@0.12.0
+
 # --- END --- #
 # --------------------------------------------------- #
 # -------------- DEFINE YOUR WORKFLOW --------------- #
