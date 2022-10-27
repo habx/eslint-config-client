@@ -24,6 +24,7 @@ module.exports = {
       {
         newlinesBetween: 'always',
         groups: [
+          'type',
           'module',
           '/^@habx//',
           '/^@components/',
