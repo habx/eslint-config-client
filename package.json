@@ -51,7 +51,7 @@
   },
   "devDependencies": {
     "husky": "^5.2.0",
-    "lint-staged": "^13.0.3"
+    "lint-staged": "^13.0.4"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
